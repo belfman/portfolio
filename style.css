@@ -1,13 +1,84 @@
-#firstTitle {
-    padding-top: 50px;
+#aboutMeTitle {
+    margin-top: 100px;
 }
 
 .title {
     text-align: center;
+    background: green;
+    color: white;
+    padding: 5px;
+    margin: 5px auto 5px auto;
+    width: 500px;
+    border-radius: 15px;
 }
 
-#aboutMe {
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 100px;
+#aboutMeParagraph {
+    margin: 5px auto 5px auto;
+    width: 550px;
+    border-radius: 5px;
 }
+
+#projectsParagraph {
+    margin: 5px auto 5px auto;
+    width: 550px;
+    border-radius: 5px;
+}
+
+#linksParagraph {
+    margin: 5px auto 5px auto;
+    width: 550px;
+    border-radius: 5px;
+}
+
+p {
+    background: lightgreen;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.col-sm-3 {
+    background: white;
+}
+
+.everyDiv {
+    background: purple;
+    height: 300px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.otherDiv {
+    background: rgb(248, 142, 2);
+    height: 300px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.graph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.everyUl {
+    color: white;
+    padding-top: 5px;
+}
+
+.linkHolder {
+    margin: 5px auto 10px auto;
+    background: rgb(248, 142, 2);
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+}
+
+h3 {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+
