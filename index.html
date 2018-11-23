@@ -5,38 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beau Elfman Portfolio</title>
-    <!-- link to css style sheet -->
-    <link href="style.css" rel="stylesheet"> 
+
     <!-- link to make bootstrap work -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Textallite CDNs-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#"><b>Beau Elfman</b></a>
-            </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#aboutMeTitle">About me</a></li>
-                <li><a href="#projectsTitle">Projects</a></li>
-                <li><a href="#linksTitle">Links</a></li>
+                <li class="navbarButton"><a href="#">Home</a></li>
+                <li class="navbarButton"><a href="#aboutMeTitle">About me</a></li>
+                <li class="navbarButton"><a href="#projectsTitle">Projects</a></li>
+                <li class="navbarButton"><a href="#linksTitle">Links</a></li>
             </ul>
         </div>
     </nav>
 
 <div class="container-fluid">
-  <h1 id="aboutMeTitle" class="title">About Me</h1>
+  <h1 id="aboutMeTitle" class="title tlt">About Me</h1>
     <p class="descParagraph" id="aboutMeParagraph">My name is Beau Elfman and I am from sunny San Diego CA. <br>Formerly a High School Math Teacher, Currently a student of Data Analytics and Visualization, Future Data Analyst. Familiar with several coding languages including: Excel VBA, Python, and SQL. Looking to combine my communication experience with both my passion for creating meaningful visuals and desire to help my community. I am eager to sift through big data and organize the key points to facilitate meaningful results.</p>
 <!-- Projects -->
     <div class="row">
-        <h1 id="projectsTitle" class="title">Projects</h1>
-        <p class="descParagraph" id="projectsParagraph">Here are some samples of projects I have worked on. Click each graph to be whisked away to the corresponding <b>GitHub</b> repository to view the code.</p>
-        
+        <h1 id="projectsTitle" class="title tlt">Projects</h1>
+        <p class="descParagraph" id="projectsParagraph">Here are some samples of projects I have worked on. Click each graph to be whisked away to the corresponding <a href="https://github.com/belfman" target="_blank"><b>GitHub</b></a> repository or deployed site to view the code.</p>
         <div class="col-sm-3">
             <div class="otherDiv">
                 <ul class="otherUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Help Pyber find insights via Data</li>
+                    <li class="toolsTitle">Tools:</li>
                     <li>Python</li>
                     <li>MatPlotLib</li>
                     <li>Jupyter Notebook</li>
@@ -50,6 +57,9 @@
         <div class="col-sm-3">
             <div class="everyDiv">
                 <ul class="everyUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Is it hotter at the Equator?</li>
+                    <li class="toolsTitle"><b>Tools:</b>
                     <li>Python</li>
                     <li>MatPlotLib</li>
                     <li>WeatherMap API</li>
@@ -63,12 +73,15 @@
         <div class="col-sm-3">
             <div class="otherDiv">
                 <ul class="otherUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Twitter News Sentiment Analysis</li>
+                    <li class="toolsTitle"><b>Tools:</b>
                     <li>DateTime</li>
                     <li>Twepy API</li>
                     <li>Vader Sentiment</li>
                 </ul>
                 <a href="https://github.com/belfman/The-Mood-of-the-News-Today" target="_blank">
-                <img class="graph" src="images/Mood_of_News_bar1.png" alt="cloudiness image" height="200" title="With a chance of Meatballs">
+                <img class="graph" src="images/Mood_of_News_bar1.png" alt="cloudiness image" height="200" title="Sentiment Analysis">
                 </a>
             </div>
         </div>
@@ -76,12 +89,15 @@
         <div class="col-sm-3" >
             <div class="everyDiv">
                 <ul class="everyUl">
-                    <li>HTML</li>
-                    <li>D3.JS</li>
-                    <li>JavaScript</li>
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Recent Earthquake Data Visualization</li>
+                    <li class="toolsTitle"><b>Tools:</b>
+                    <li>Javascript</li>
+                    <li>Leaflet.JS</li>
+                    <li>Bootstrap</li>
                 </ul>
-                <a href="https://github.com/belfman/D3-interactive-graph" target="_blank">
-                <img class="graph" src="images/d3Graph.png" alt="State Scatter Plot" height="150" title="State Scatter Plot">
+                <a href="https://belfman.github.io/Earthquake_Visualization/index.html" target="_blank">
+                <img class="graph" src="images/EQVis.PNG" alt="State Scatter Plot" height="130" title="Earthquake Visualization">
                 </a>
             </div>
         </div>
@@ -93,6 +109,9 @@
             <div class="col-sm-3">
                 <div class="everyDiv">
                     <ul class="everyUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Help Pyber find insights via Data</li>
+                        <li class="toolsTitle"><b>Tools:</b>
                         <li>NumPy</li>
                         <li>Pandas</li>
                         <li>Markdown</li>
@@ -106,6 +125,9 @@
             <div class="col-sm-3" >
                 <div class="otherDiv">
                     <ul class="otherUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Deploy page with HTML/CSS</li>
+                        <li class="toolsTitle"><b>Tools:</b>
                         <li>CSS</li>
                         <li>HTML</li>
                         <li>GitHub</li>
@@ -119,6 +141,9 @@
             <div class="col-sm-3">
                 <div class="everyDiv">
                     <ul class="everyUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Searchable Alien DataBase</li>
+                        <li class="toolsTitle"><b>Tools:</b>
                         <li>CSS</li>
                         <li>HTML</li>
                         <li>GitHub</li>
@@ -132,6 +157,9 @@
             <div class="col-sm-3">
                 <div class="otherDiv">
                     <ul class="otherUl">
+                    <li class="taskTitle">Task:</li>
+                    <li class="taskParagraph"> Hawaii Weather Report</li>
+                        <li class="toolsTitle"><b>Tools:</b>
                         <li>Python</li>
                         <li>WeatherMap API</li>
                         <li>MatPlotLib</li>
@@ -144,7 +172,7 @@
         </div>
     </div>
 
-<h1 id="linksTitle" class="title">Links</h1>
+<h1 id="linksTitle" class="title tlt">Links</h1>
     <div>
         <p class="descParagraph" id="linksParagraph">Contact information such as email and phone number are available on the resume link. </p>
     </div>
@@ -171,6 +199,12 @@
 </div>
 
 <h3>Created by: Beau Elfman, 2018</h3>
+
+<!-- link to css style sheet -->
+<link href="static/css/style.css" rel="stylesheet"> 
+
+<!-- link to js-->
+<script type="text/javascript" src="static/js/logic.js"></script>
 
 </body>
 </html>
