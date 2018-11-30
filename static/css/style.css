@@ -33,7 +33,7 @@ li {
     text-align: center;
     background: green;
     color: white;
-    padding: 5px;
+    margin: 5px;
     margin: 5px auto 5px auto;
     width: 500px;
     border-radius: 15px;
@@ -61,7 +61,7 @@ p {
     background: lightgreen;
     text-align: center;
     padding: 5px;
-    font-size: 15px;
+    font-size: 17px;
     }
 
 .col-sm-3 {
