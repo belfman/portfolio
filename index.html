@@ -22,34 +22,49 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="#"><b>Beau Elfman</b></a>
-            <ul class="nav navbar-nav">
-                <li class="navbarButton"><a href="#">Home</a></li>
-                <li class="navbarButton"><a href="#aboutMeTitle">About me</a></li>
-                <li class="navbarButton"><a href="#projectsTitle">Projects</a></li>
-                <li class="navbarButton"><a href="#linksTitle">Links</a></li>
-            </ul>
+                <ul class="nav navbar-nav">
+                    <li class="navbarButton"><a href="#">Home</a></li>
+                    <li class="navbarButton"><a href="#aboutMeTitle">About me</a></li>
+                    <li class="navbarButton"><a href="#projectsTitle">Projects</a></li>
+                    <li class="navbarButton"><a href="#linksTitle">Links</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 <div class="container-fluid">
-  <h1 id="aboutMeTitle" class="title tlt">About Me</h1>
-    <p class="descParagraph" id="aboutMeParagraph">My name is Beau Elfman and I am from sunny San Diego CA. <br>Formerly a High School Math Teacher, Currently a student of Data Analytics and Visualization, Future Data Analyst. Familiar with several coding languages including: Excel VBA, Python, and SQL. Looking to combine my communication experience with both my passion for creating meaningful visuals and desire to help my community. I am eager to sift through big data and organize the key points to facilitate meaningful results.</p>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <img class="profilePicture" src="images/profile_pic.png" alt="Picture of Me" height="250" title="Beau Elfman">
+        </div>
+
+        <div class="col-sm-6">
+            <h1 id="aboutMeTitle" class="title tlt">About Me</h1>
+                <p class="descParagraph" id="aboutMeParagraph">My name is Beau Elfman and I am from sunny San Diego CA. <br>Formerly a High School Math Teacher, Currently a student of Data Analytics and Visualization, Future Data Analyst. Familiar with several coding languages including: Excel VBA, Python, and SQL. Looking to combine my communication experience with both my passion for creating meaningful visuals and desire to help my community. I am eager to sift through big data and organize the key points to facilitate meaningful results.</p>
+        </div>
+
+    </div>
+</div>
+
 <!-- Projects -->
+<div class="container-fluid">
     <div class="row">
         <h1 id="projectsTitle" class="title tlt">Projects</h1>
-        <p class="descParagraph" id="projectsParagraph">Here are some samples of projects I have worked on. Click each graph to be whisked away to the corresponding <a href="https://github.com/belfman" target="_blank"><b>GitHub</b></a> repository or deployed site to view the code.</p>
+        <p class="descParagraph" id="projectsParagraph">Here are some projects I have worked on. Click on each image to view the corresponding <a href="https://github.com/belfman" target="_blank"><b>GitHub</b></a> repository or deployed site.</p>
+
         <div class="col-sm-3">
             <div class="otherDiv">
                 <ul class="otherUl">
                     <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Help Pyber find insights via Data</li>
+                    <li class="taskParagraph"> Find trends for KickStarter</li>
                     <li class="toolsTitle">Tools:</li>
-                    <li>Python</li>
-                    <li>MatPlotLib</li>
-                    <li>Jupyter Notebook</li>
+                    <li>Excel</li>
+                    <li>Conditional Formatting</li>
+                    <li>Pivot Table</li>
                 </ul>
-                <a href="https://github.com/belfman/PyBer..connect" target="_blank">
-                <img class="graph" src="images/PyBer_bubble.png" alt="Bubble image" height="175" title="PyBer Bubble Chart">
+                <a href="https://github.com/belfman/KickStartChart" target="_blank">
+                <img class="graph" src="images/ExcelP1.png" alt="Excel Image" height="100" title="KickStarter Excel">
                 </a>
             </div>
         </div>
@@ -57,15 +72,15 @@
         <div class="col-sm-3">
             <div class="everyDiv">
                 <ul class="everyUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Is it hotter at the Equator?</li>
+                <li class="taskTitle">Task:</li>
+                <li class="taskParagraph"> CitiBike data Visualization</li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Python</li>
-                    <li>MatPlotLib</li>
-                    <li>WeatherMap API</li>
+                    <li>Excel</li>
+                    <li>Tableau</li>
+                    <li>Tableau Public</li>
                 </ul>
-                <a href="https://github.com/belfman/WeatherPy" target="_blank">
-                <img class="graph" src="images/Latitude_Temperature.png" alt="temperature image" height="180" title="Latitude v Temperature">
+                <a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">
+                <img class="graph" src="images/tableau.png" alt="Tableau image" height="110" title="Tableau">
                 </a>
             </div>
         </div>
@@ -112,9 +127,9 @@
                     <li class="taskTitle">Task:</li>
                     <li class="taskParagraph"> Help Pyber find insights via Data</li>
                         <li class="toolsTitle"><b>Tools:</b>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>Markdown</li>
+                        <li>Python, Jupyter Notebook</li>
+                        <li>Pandas, Matplotlib</li>
+                        <li>Markdown, Numpy</li>
                     </ul>
                     <a href="https://github.com/belfman/PyBer..connect" target="_blank">
                     <img class="graph" src="images/PyBer_fares_pie.png" alt="Pie Chart image" height="160" title="PyBer Pie Chart">
@@ -154,23 +169,23 @@
                 </div>
             </div>
 
-            <div class="col-sm-3">
-                <div class="otherDiv">
-                    <ul class="otherUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Hawaii Weather Report</li>
-                        <li class="toolsTitle"><b>Tools:</b>
-                        <li>Python</li>
-                        <li>WeatherMap API</li>
-                        <li>MatPlotLib</li>
-                    </ul>
-                    <a href="https://github.com/belfman/Surfs_up_Mr-Data" target="_blank">
-                    <img class="graph" src="images/histogram.png" alt="Histogram image" height="150" title="Histogram">
-                    </a>
-                </div>
+        <div class="col-sm-3">
+            <div class="otherDiv">
+                <ul class="otherUl">
+                <li class="taskTitle">Task:</li>
+                <li class="taskParagraph"> Is it hotter at the Equator?</li>
+                    <li class="toolsTitle"><b>Tools:</b>
+                    <li>Python</li>
+                    <li>MatPlotLib</li>
+                    <li>WeatherMap API</li>
+                </ul>
+                <a href="https://belfman.github.io/index.html/" target="_blank">
+                <img class="graph" src="images/Latitude_Temperature.png" alt="temperature image" height="180" title="Latitude v Temperature">
+                </a>
             </div>
         </div>
     </div>
+</div>
 
 <h1 id="linksTitle" class="title tlt">Links</h1>
     <div>
@@ -178,23 +193,29 @@
     </div>
 
 
-<div class="container-fluid">
-    <div class="col-sm-4">
+<div class="container-fluid pageLink">
+    <div class="col-sm-3">
         <div class="linkHolder">
             <a href="https://docs.google.com/document/d/1D8B03iywcdfcQ52VbYYkio6Efboy9kWedRBfDCEQQTE/edit?usp=sharing" target="_blank">Resume</a>
         </div>
     </div>
 
-    <div class="col-sm-4 pageLink">
+    <div class="col-sm-3 pageLink">
             <div class="linkHolder">
             <a href="https://www.linkedin.com/in/beau-elfman-565724163" target="_blank" >LinkedIn</a>
             </div>
     </div>
 
-    <div class="col-sm-4 pageLink">
+    <div class="col-sm-3 pageLink">
             <div class="linkHolder">
             <a href="https://github.com/belfman" target="_blank">GitHub</a>
             </div>
+    </div>
+
+    <div class="col-sm-3 pageLink">
+        <div class="linkHolder">
+        <a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">Tableau</a>
+        </div>
     </div>
 </div>
 
