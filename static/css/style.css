@@ -6,6 +6,42 @@ body {
     background-color: rgb(236, 255, 236);
     }
 
+#profilePicture {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(236, 255, 236);
+}
+
+#profileFrame {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    background: green;
+    color: white;
+    margin: 5px;
+    margin: 5px auto 5px auto;
+    width: 500px;
+    border-radius: 15px;
+    }
+
+#aboutMeParagraph {
+    margin: 5px auto 5px auto;
+    width: 550px;
+    border-radius: 5px;
+    }
+
+#projectsParagraph {
+    margin: 5px auto 5px auto;
+    width: 550px;
+    border-radius: 5px;
+    }
 .taskTitle {
     list-style: none;
     font-size: 20px;
@@ -29,28 +65,6 @@ li {
     list-style-position: inside;
     }
 
-.title {
-    text-align: center;
-    background: green;
-    color: white;
-    margin: 5px;
-    margin: 5px auto 5px auto;
-    width: 500px;
-    border-radius: 15px;
-    }
-
-#aboutMeParagraph {
-    margin: 5px auto 5px auto;
-    width: 550px;
-    border-radius: 5px;
-    }
-
-#projectsParagraph {
-    margin: 5px auto 5px auto;
-    width: 550px;
-    border-radius: 5px;
-    }
-
 #linksParagraph {
     margin: 5px auto 5px auto;
     width: 550px;
@@ -62,10 +76,6 @@ p {
     text-align: center;
     padding: 5px;
     font-size: 17px;
-    }
-
-.col-sm-3 {
-    background: white;
     }
 
 .everyDiv {
@@ -86,6 +96,8 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 90%;
     }
 
 .everyUl {
@@ -95,7 +107,7 @@ p {
 
 
 .linkHolder {
-    margin: 5px auto 10px auto;
+    margin: 5px auto 5px auto;
     background: rgb(248, 142, 2);
     font-size: 30px;
     text-align: center;
@@ -107,7 +119,12 @@ h3 {
     text-align: center;
     background: lightgrey;
     color: blue;
-    padding: 5px 5px 1px 5px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 25px;
     }
+
+.pageLink {
+    background:rgb(236, 255, 236);
+}
 
 
