@@ -14,6 +14,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+      <!-- Font Awesome Icons CDNs-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -26,7 +30,8 @@
                     <li class="navbarButton"><a href="#">Home</a></li>
                     <li class="navbarButton"><a href="#aboutMeTitle">About me</a></li>
                     <li class="navbarButton"><a href="#projectsTitle">Projects</a></li>
-                    <li class="navbarButton"><a href="#linksTitle">Contact/Links</a></li>
+                    <li class="navbarButton"><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li class="navbarButton"><a href="https://github.com/belfman"><i class="fa fa-github" style="font-size:36px"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +41,7 @@
     <div class="row">
 
         <div class="col-sm-3" id="profilePicture">
-            <img id="profileFrame" src="images/profile_pic.PNG" alt="Picture of Me" height="250" title="Beau Elfman">
+            <img id="profileFrame" src="images/profile_pic.PNG" alt="Picture of Me" height="200" title="Beau Elfman">
         </div>
 
         <div class="col-sm-6">
@@ -49,177 +54,72 @@
 
 <!-- Projects -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="row test">
         <h1 id="projectsTitle" class="title tlt">Projects</h1>
-        <p class="descParagraph" id="projectsParagraph">Here are some projects I have worked on. Click on each image to view the corresponding <a href="https://github.com/belfman" target="_blank"><b>GitHub</b></a> repository or deployed site.</p>
 
-        <div class="col-sm-3 pageLink">
-            <div class="otherDiv">
-                <ul class="otherUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Find trends for KickStarter</li>
+        <!-- Kickstart -->
+        <div class="col-sm-6 pageLink">
+            <div class="projectBack">
+                <ul class="everyUl">
+                    <li class="taskTitle">KickStartChart:</li>
+                    <li class="taskParagraph"> Analyze 4,115 projects from <a href="https://www.kickstarter.com/" target="blank">Kickstarter</a> data to uncover hidden trends that   show whether or not a project will be successful. Analysis and visuals are done in Excel.</li>
                     <li class="toolsTitle">Tools:</li>
-                    <li>Excel</li>
-                    <li>Conditional Formatting</li>
-                    <li>Pivot Table</li>
+                    <li>Excel, Conditional Formatting, Pivot Table</li>
                 </ul>
                 <a href="https://github.com/belfman/KickStartChart" target="_blank">
-                <img class="graph" src="images/ExcelP1.PNG" alt="Excel Image" height="100" title="KickStarter Excel">
+                <img class="graph" src="images/ExcelP1.PNG" alt="Excel Image" height="195" title="KickStarter Excel">
                 </a>
             </div>
         </div>
 
-        <div class="col-sm-3 pageLink">
-            <div class="everyDiv">
+        <!-- Tableau -->
+        <div class="col-sm-6 pageLink">
+            <div class="projectBack">
                 <ul class="everyUl">
-                <li class="taskTitle">Task:</li>
-                <li class="taskParagraph"> CitiBike data Visualization</li>
+                <li class="taskTitle">CitiBike:</li>
+                <li class="taskParagraph"> Gather data from <a href="https://www.citibikenyc.com/" target="blank">CitiBike</a>, a New York bikeshare program, and use Tableau to visualize bike station locations and usage frequency to make conclusions anout most popular stations.</li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Excel</li>
-                    <li>Tableau</li>
-                    <li>Tableau Public</li>
-                </ul>
+                    <li>Excel, Tableau, Tableau Public</li>
+                   </ul>
                 <a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">
-                <img class="graph" src="images/tableau.PNG" alt="Tableau image" height="110" title="Tableau">
+                <img class="graph" src="images/tableau.PNG" alt="Tableau image" height="200" title="Tableau">
                 </a>
             </div>
         </div>
 
-        <div class="col-sm-3 pageLink">
-            <div class="otherDiv">
-                <ul class="otherUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Twitter News Sentiment Analysis</li>
-                    <li class="toolsTitle"><b>Tools:</b>
-                    <li>Python</li>
-                    <li>Twepy API</li>
-                    <li>Vader Sentiment</li>
-                </ul>
-                <a href="https://github.com/belfman/The-Mood-of-the-News-Today" target="_blank">
-                <img class="graph" src="images/Mood_of_News_bar1.png" alt="cloudiness image" height="200" title="Sentiment Analysis">
-                </a>
-            </div>
-        </div>
-
-        <div class="col-sm-3 pageLink">
-            <div class="everyDiv">
+        <!-- Earthquake -->
+        <div class="col-sm-6 pageLink">
+            <div class="projectBack">
                 <ul class="everyUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Recent Earthquake Data Visualization</li>
+                    <li class="taskTitle">EarthQuakes:</li>
+                    <li class="taskParagraph"> Create an interactive Leaflet Map with JavaScript to Visualize Global Earthquake data from the last 7 days from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="blank">USGS</a>. </li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Javascript</li>
-                    <li>Leaflet.JS</li>
-                    <li>Bootstrap</li>
+                    <li>Javascript, HTML, CSS, Leaflet</li>
                 </ul>
                 <a href="https://belfman.github.io/Earthquake_Visualization/index.html" target="_blank">
-                <img class="graph" src="images/EQVis.PNG" alt="Leaflet" height="130" title="Earthquake Visualization">
+                <img class="graph" src="images/EQVis.PNG" alt="Leaflet" height="200" title="Earthquake Visualization">
                 </a>
             </div>
         </div>
-    </div>
-</div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 pageLink">
-                <div class="everyDiv">
-                    <ul class="everyUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Help Pyber find insights via Data</li>
-                        <li class="toolsTitle"><b>Tools:</b>
-                        <li>Python, Jupyter Notebook</li>
-                        <li>Pandas, Matplotlib</li>
-                        <li>Markdown, Numpy</li>
-                    </ul>
-                    <a href="https://github.com/belfman/PyBer..connect" target="_blank">
-                    <img class="graph" src="images/PyBer_fares_pie.png" alt="Pie Chart image" height="160" title="PyBer Pie Chart">
-                    </a>
-               </div>
-            </div>
-
-            <div class="col-sm-3 pageLink">
-                <div class="otherDiv">
-                    <ul class="otherUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Deploy page with HTML/CSS</li>
-                        <li class="toolsTitle"><b>Tools:</b>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>GitHub</li>
-                    </ul>
-                    <a href="https://belfman.github.io/index.html" target="_blank">
-                    <img class="graph" src="images/Latitude_Longitude.png" alt="Latitude v Longitude Plot" height="180" title="Latitude v Longitude Plot">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-3 pageLink">
-                <div class="everyDiv">
-                    <ul class="everyUl">
-                    <li class="taskTitle">Task:</li>
-                    <li class="taskParagraph"> Visualize with Tableau</li>
-                        <li class="toolsTitle"><b>Tools:</b>
-                        <li>Tableau</li>
-                        <li>HTML</li>
-                        <li>CSS/JS</li>
-                    </ul>
-                    <a href="https://belfman.github.io/NBA/index.html" target="_blank">
-                    <img class="graph" src="images/NBA.PNG" alt="NBA image" height="115" title="NBA Award Winners">
-                    </a>
-                </div>
-            </div>
-
-        <div class="col-sm-3 pageLink">
-            <div class="otherDiv">
-                <ul class="otherUl">
-                <li class="taskTitle">Task:</li>
-                <li class="taskParagraph"> Is it hotter at the Equator?</li>
+        <!-- NBA -->
+        <div class="col-sm-6 pageLink">
+            <div class="projectBack">
+                <ul class="everyUl">
+                <li class="taskTitle">NBA Awards:</li>
+                <li class="taskParagraph"> Data is imported from <a href="https://www.basketball-reference.com/" target="blank">basketball-reference.com</a> into Excel, then use Tableau to create interactable graphs that visualize comparisons of NBA end of year award winners.</li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Python</li>
-                    <li>MatPlotLib</li>
-                    <li>WeatherMap API</li>
+                    <li>Excel, Tableau, HTML, CSS/JS, GitHub</li>
                 </ul>
-                <a href="https://belfman.github.io/index.html/" target="_blank">
-                <img class="graph" src="images/Latitude_Temperature.png" alt="temperature image" height="180" title="Latitude v Temperature">
+                <a href="https://belfman.github.io/NBA/index.html" target="_blank">
+                <img class="graph" src="images/NBA.PNG" alt="NBA image" height="200" title="NBA Award Winners">
                 </a>
             </div>
         </div>
     </div>
 </div>
 
-<h1 id="linksTitle" class="title tlt">Contact / Links</h1>
-    <div>
-        <p class="descParagraph" id="linksParagraph">Contact information such as email and phone number are available on the resume link. </p>
-    </div>
-
-
-<div class="container-fluid pageLink">
-    <div class="col-sm-3 pageLink">
-        <div class="linkHolder">
-            <a href="https://docs.google.com/document/d/1f7XXRJJX5Lgcwr48fvF-553VcAMo_BQxvyvkovPYsd4/edit?usp=sharing" target="_blank">Resume</a>
-        </div>
-    </div>
-
-    <div class="col-sm-3 pageLink">
-            <div class="linkHolder">
-            <a href="https://www.linkedin.com/in/beau-elfman-565724163" target="_blank" >LinkedIn</a>
-            </div>
-    </div>
-
-    <div class="col-sm-3 pageLink">
-            <div class="linkHolder">
-            <a href="https://github.com/belfman" target="_blank">GitHub</a>
-            </div>
-    </div>
-
-    <div class="col-sm-3 pageLink">
-        <div class="linkHolder">
-        <a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">Tableau</a>
-        </div>
-    </div>
-</div>
-
-<h3>Created by: Beau Elfman, 2018</h3>
+<h3>Created by: Beau Elfman, 2019</h3>
 
 <!-- link to css style sheet -->
 <link href="static/css/style.css" rel="stylesheet"> 
