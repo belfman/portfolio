@@ -1,9 +1,25 @@
 #aboutMeTitle {
     margin-top: 10px;
-}
+    }
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+    }
+
+.fa {
+    font-size:36px;
+    margin-top: -8px;
+    }
+
+.navbarButton {
+    font-size: 24px;
+    margin-top:10px;
+    }
 
 body {
-    background-color: rgb(236, 255, 236);
+    background-color: rgb(189, 255, 189);
     }
 
 #profilePicture {
@@ -12,29 +28,30 @@ body {
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(236, 255, 236);
-}
+    background-color: rgb(189, 255, 189);
+    }
 
 #profileFrame {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 100%;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.4), 0px 16px 20px 0px rgba(0, 0, 0, 0.19);
+    max-width: 110%;
     height: auto;
-}
+    }
 
 .title {
     text-align: center;
     background: green;
     color: white;
-    margin: 5px;
     margin: 5px auto 5px auto;
-    width: 500px;
+    padding: 5px;
+    width: 550px;
     border-radius: 15px;
+    border: 2px solid black;
     }
 
 #aboutMeParagraph {
-    margin: 5px auto 5px auto;
+    padding: 10px;
+    margin: 0px auto 0px auto;
     width: 550px;
-    border-radius: 5px;
     }
 
 #projectsParagraph {
@@ -42,6 +59,7 @@ body {
     width: 550px;
     border-radius: 5px;
     }
+
 .taskTitle {
     list-style: none;
     font-size: 20px;
@@ -72,21 +90,14 @@ li {
     }
 
 p {
-    background: lightgreen;
+    background-color: rgb(189, 255, 189);
     text-align: center;
     padding: 5px;
     font-size: 17px;
     }
 
-.everyDiv {
-    background: purple;
-    height: 350px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-    }
-
-.otherDiv {
-    background: rgb(248, 142, 2);
+.projectBack {
+    background:rgb(85, 207, 85);
     height: 350px;
     margin-bottom: 5px;
     border-radius: 3px;
@@ -101,30 +112,22 @@ p {
     }
 
 .everyUl {
-    color: white;
+    color: black;
     padding-top: 5px;
-    }
-
-
-.linkHolder {
-    margin: 5px auto 5px auto;
-    background: rgb(248, 142, 2);
-    font-size: 30px;
-    text-align: center;
-    border-radius: 15px;
-    width: 200px;
     }
 
 h3 {
     text-align: center;
-    background: lightgrey;
-    color: blue;
+    background: black;
+    color: lightgrey;
     padding: 5px 5px 5px 5px;
     margin-bottom: 25px;
     }
 
 .pageLink {
     background:rgb(236, 255, 236);
+    }
+
+.pageLink {
+    background-color: rgb(189, 255, 189);
 }
-
-
