@@ -19,7 +19,14 @@
     }
 
 body {
-    background-color: rgb(189, 255, 189);
+    background: url("../../images/backgroundTexture.png") center;
+    background-image: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 
 #profilePicture {
@@ -28,7 +35,14 @@ body {
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(189, 255, 189);
+    background: url("../../images/backgroundTexture.png") center;
+    background-image: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 
 #profileFrame {
@@ -52,6 +66,7 @@ body {
     padding: 10px;
     margin: 0px auto 0px auto;
     width: 550px;
+    opacity: 1;
     }
 
 #projectsParagraph {
@@ -90,8 +105,8 @@ li {
     }
 
 p {
-    background-color: rgb(189, 255, 189);
-    text-align: center;
+    background-color: rgb(189, 255, 189, .6);
+    text-align: left;
     padding: 5px;
     font-size: 17px;
     }
@@ -119,15 +134,57 @@ p {
 h3 {
     text-align: center;
     background: black;
-    color: lightgrey;
+    color: rgb(188, 255, 188);
     padding: 5px 5px 5px 5px;
     margin-bottom: 25px;
     }
 
 .pageLink {
-    background:rgb(236, 255, 236);
+    background: url("../../images/backgroundTexture.png") center;
+    background-image: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 
-.pageLink {
-    background-color: rgb(189, 255, 189);
-}
+/* hover over image image effect */
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: white;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
