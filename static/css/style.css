@@ -2,10 +2,18 @@
     margin-top: 10px;
     }
 
+/* Name in navbar */
 .navbar-brand {
     font-size: 40px;
     font-weight: bold;
     margin-top: 5px;
+    }
+
+.navbar-nav  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     }
 
 .fa {
@@ -35,14 +43,6 @@ body {
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
-    background: url("../../images/backgroundTexture.png") center;
-    background-image: fixed;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     }
 
 #profileFrame {
@@ -53,13 +53,12 @@ body {
 
 .title {
     text-align: center;
-    background: green;
-    color: white;
+    background: rgb(0, 128, 0, .2);
+    color: black;
     margin: 5px auto 5px auto;
     padding: 5px;
     width: 550px;
     border-radius: 15px;
-    border: 2px solid black;
     }
 
 #aboutMeParagraph {
@@ -139,16 +138,7 @@ h3 {
     margin-bottom: 25px;
     }
 
-.pageLink {
-    background: url("../../images/backgroundTexture.png") center;
-    background-image: fixed;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
+
 
 /* hover over image image effect */
 .container {
