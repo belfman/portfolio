@@ -7,6 +7,7 @@
     font-size: 40px;
     font-weight: bold;
     margin-top: 5px;
+    color: white;
     }
 
 .navbar-nav  {
@@ -14,6 +15,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    radius: 0px;
     }
 
 .fa {
@@ -26,7 +28,7 @@
     margin-top:10px;
     }
 
-body {
+.aboutME {
     background: url("../../images/backgroundTexture.png") center;
     background-image: fixed;
     background-attachment: fixed;
@@ -35,6 +37,43 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding: 20px 0px 20px 0px;
+}
+
+.kyotoImage {
+    position: relative;
+    text-align: center;
+    color: white;
+    height:100%;
+    background-position: top center;
+    background-repeat: none;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -20px;
+    }
+
+.centered {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    width: 1000px;
+    }
+
+#small {
+    font-size: 20px;
+    align: middle;
+    }
+
+#big {
+    font-size: 60px;
+    align: middle;
+
+    }
+
+.projects {
+    background-color: white;
     }
 
 #profilePicture {
@@ -53,12 +92,11 @@ body {
 
 .title {
     text-align: center;
-    background: rgb(0, 128, 0, .2);
+    /* background: rgb(0, 128, 0, .2); */
     color: black;
     margin: 5px auto 5px auto;
     padding: 5px;
-    width: 550px;
-    border-radius: 15px;
+    width: 100%;
     }
 
 #aboutMeParagraph {
@@ -66,6 +104,7 @@ body {
     margin: 0px auto 0px auto;
     width: 550px;
     opacity: 1;
+    font-size: 20px;
     }
 
 #projectsParagraph {
@@ -108,11 +147,17 @@ p {
     text-align: left;
     padding: 5px;
     font-size: 17px;
+    font-family: serif;
     }
 
+.taskParagraph {
+    font-family: serif;
+    font-size: 17px;
+}
+
 .projectBack {
-    background:rgb(85, 207, 85);
-    height: 350px;
+    /* background:rgb(85, 207, 85); */
+    height: 400px;
     margin-bottom: 5px;
     border-radius: 3px;
     }
@@ -121,7 +166,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.60);
     max-width: 90%;
     }
 
@@ -132,27 +177,25 @@ p {
 
 h3 {
     text-align: center;
-    background: black;
-    color: rgb(188, 255, 188);
+    background: white;
+    color: black;
     padding: 5px 5px 5px 5px;
-    margin-bottom: 25px;
+    margin: 40px 0px 30px 0px;
     }
-
-
 
 /* hover over image image effect */
 .container {
     position: relative;
     width: 100%;
-  }
+    }
   
-  .image {
+.image {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
+    }
   
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -161,17 +204,17 @@ h3 {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+    }
   
-  .container:hover .image {
+.container:hover .image {
     opacity: 0.3;
   }
   
-  .container:hover .middle {
+.container:hover .middle {
     opacity: 1;
   }
   
-  .text {
+.text {
     background-color: white;
     color: white;
     font-size: 16px;
