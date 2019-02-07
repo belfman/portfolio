@@ -33,34 +33,40 @@
 
             <div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="navbarButton"><a href="#">Home</a></li>
                     <li class="navbarButton"><a href="#aboutMeTitle">About Me</a></li>
                     <li class="navbarButton"><a href="#projectsTitle">Projects</a></li>
+                    <li class="navbarButton"><a href="images/Resume2019.pdf" target="_blank">Resume</a></li>
                     <li class="navbarButton"><a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                     <li class="navbarButton"><a href="https://github.com/belfman" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a></li>
                 </ul>
             </div>
 
     </nav>
-
+    
 <div class="container-fluid">
-    <div class="row">
+    <div class="row kyotoImage">
 
-        <div class="col-sm-3" id="profilePicture">
-            <img id="profileFrame" src="images/profile_pic.PNG" alt="Picture of Me" height="200" title="Beau Elfman">
-        </div>
-
-        <div class="col-sm-6">
-            <h1 id="aboutMeTitle" class="title tlt">About Me</h1>
-                <p class="descParagraph" id="aboutMeParagraph">My name is Beau Elfman and I live in sunny San Diego, CA. <br>Formerly a High School Math Teacher, Currently a student of Data Analytics and Visualization, Future Data Analyst. Familiar with several coding languages including: Excel VBA, Python, and SQL. Looking to combine my communication experience with both my passion for creating meaningful visuals and desire to help my community. I am eager to sift through big data and organize the key points to facilitate meaningful results.</p>
-        </div>
-
+            <img id="kyotoImage" src="images/Kyoto2.JPG" alt="Kyoto Park" title="Kyoto Details">
+            <div class="centered">{ finding the <span id="small"><i>small</i></span> details in <span id="big"><i>BIG</i></span> data }</div>
     </div>
+</div>
+
+<div class="container-fluid" >
+    <section class="row aboutME">
+            <div class="col-sm-3" id="profilePicture">
+                <img id="profileFrame" src="images/profile_pic.PNG" alt="Picture of Me" height="200" title="Beau Elfman">
+            </div>
+
+            <div class="col-sm-6">
+                <h1 id="aboutMeTitle" class="title tlt">About Me</h1>
+                    <p class="descParagraph" id="aboutMeParagraph">Formerly a High School Math Teacher, Currently a student of Data Analytics and Visualization, Future Data Analyst. Familiar with several coding languages including: Excel VBA, Python, and SQL. Looking to combine my communication experience with both my passion for creating meaningful visuals and desire to help my community. I am eager to sift through big data and organize the key points to facilitate meaningful results.</p>
+            </div>
+    </section>
 </div>
 
 <!-- Projects -->
 <div class="container-fluid">
-    <div class="row test">
+    <div class="row projects">
         <h1 id="projectsTitle" class="title tlt">Projects</h1>
 
         <!-- Kickstart -->
@@ -70,12 +76,12 @@
                     <li class="taskTitle">KickStartChart:</li>
                     <li class="taskParagraph"> Analyze 4,115 projects from <a href="https://www.kickstarter.com/" target="blank">Kickstarter</a> data to uncover hidden trends that   show whether or not a project will be successful. Analysis and visuals are done in Excel.</li>
                     <li class="toolsTitle">Tools:</li>
-                    <li>Excel, Conditional Formatting, Pivot Table</li>
+                    <li class="taskParagraph">Excel, Conditional Formatting, Pivot Table</li>
                 </ul>
 
                 <!-- Hover over effect-->
                 <div class="container">
-                    <img class="graph image" src="images/ExcelP1.PNG" alt="Excel Image" height="195" title="KickStarter Excel">
+                    <img class="graph image" src="images/ExcelP5.PNG" alt="Excel Image" height="195" title="KickStarter Excel">
                     <div class="middle">
                         <div class="text"><a href="https://github.com/belfman/KickStartChart" target="_blank">GitHub</a></div>
                     </div>
@@ -88,17 +94,18 @@
         <div class="col-sm-6 pageLink">
             <div class="projectBack">
                 <ul class="everyUl">
-                <li class="taskTitle">CitiBike:</li>
-                <li class="taskParagraph"> Gather data from <a href="https://www.citibikenyc.com/" target="blank">CitiBike</a>, a New York bikeshare program, and use Tableau to visualize locations and usage frequency to make conclusions about most popular stations.</li>
+                <li class="taskTitle">WeatherPy:</li>
+                <li class="taskParagraph"> <i>Is it hotter at the equator?</i> Query <a href="https://openweathermap.org/" target="blank">OpenWeatherMap</a> API to get information on 637 randomly selected cities. Use pandas to create a table of results and matplotlib to visualize trends.</li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Excel, Tableau, Tableau Public</li>
+                    <li class="taskParagraph">Python, Pandas, Matplotlib, HTML/CSS, GitHub</li>
                    </ul>
 
                 <!-- Hover over effect-->
                 <div class="container">
-                    <img class="graph image" src="images/tableau.PNG" alt="Leaflet" height="200" title="Earthquake Visualization">
+                    <img class="graph image" src="images/Latitude_Longitude.png" alt="Leaflet" height="200" title="Earthquake Visualization">
                     <div class="middle">
-                        <div class="text"><a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">Tableau Public</a></div>
+                        <div class="text"><a href="https://github.com/belfman/WeatherPy" target="_blank">Github</a></div>
+                        <div class="text"><a href="https://belfman.github.io/index.html/" target="_blank">Deployed Site</a></div>
                     </div>
                 </div>
                 
@@ -110,9 +117,9 @@
             <div class="projectBack">
                 <ul class="everyUl">
                     <li class="taskTitle">EarthQuakes:</li>
-                    <li class="taskParagraph"> Create an interactive Leaflet Map with JavaScript to Visualize Global Earthquake data from the last 7 days from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="blank">USGS</a>. </li>
+                    <li class="taskParagraph"> Create an interactive Leaflet Map with JavaScript to Visualize Global Earthquake data. Information is taken from <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php" target="blank">USGS</a> and covers the last 7 days. </li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Javascript, HTML, CSS, Leaflet</li>
+                    <li class="taskParagraph">Javascript, HTML, CSS, Leaflet</li>
                 </ul>
         
                 <!-- Hover over effect-->
@@ -120,7 +127,7 @@
                     <img class="graph image" src="images/EQVis.PNG" alt="Leaflet" height="200" title="Earthquake Visualization">
                     <div class="middle">
                         <div class="text"><a href="https://github.com/belfman/Earthquake_Visualization" target="_blank">GitHub</div>
-                        <div class="text"><a href="https://belfman.github.io/Earthquake_Visualization/index.html" target="_blank">Site</a></div>
+                        <div class="text"><a href="https://belfman.github.io/Earthquake_Visualization/index.html" target="_blank">Deployed Site</a></div>
                     </div>
                 </div>
 
@@ -134,7 +141,7 @@
                 <li class="taskTitle">NBA Awards:</li>
                 <li class="taskParagraph"> Data is imported from <a href="https://www.basketball-reference.com/" target="blank">basketball-reference.com</a> into Excel, then use Tableau to create interactable graphs that visualize comparisons of NBA end of year award winners.</li>
                     <li class="toolsTitle"><b>Tools:</b>
-                    <li>Excel, Tableau, HTML, CSS/JS, GitHub</li>
+                    <li class="taskParagraph">Excel, Tableau, HTML, CSS/JS, GitHub</li>
                 </ul>
                 
                 <!-- Hover over effect-->
@@ -142,7 +149,8 @@
                     <img class="graph image" src="images/NBA.PNG" alt="NBA image" height="200" title="NBA Award Winners">
                     <div class="middle">
                         <div class="text"><a href="https://github.com/belfman/NBA" target="_blank">GitHub</div>
-                        <div class="text"><a href="https://belfman.github.io/NBA/index.html" target="_blank">Site</a></div>
+                        <div class="text"><a href="https://belfman.github.io/NBA/index.html" target="_blank">Deployed Site</a></div>
+                        <div class="text"><a href="https://public.tableau.com/profile/beau.elfman#!/" target="_blank">Tableau Public</a></div>
                     </div>
                 </div>
 
@@ -161,3 +169,10 @@
 
 </body>
 </html>
+
+<!-- to do
+
+link tableau public from nba project
+add picture to top of page
+scrollable navbar also collapsable?
+-->
